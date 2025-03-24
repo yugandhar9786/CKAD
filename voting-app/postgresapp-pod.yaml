@@ -14,5 +14,9 @@ spec:
       value: "postgres"
     - name: POSTGRES_PASSWORD
       value: "postgres"
+    - name: POSTGRES_DB
+      value: "mydatabase"
+    - name: POSTGRES_INITDB_ARGS
+      value: "--auth=md5"
     ports:
       - containerPort: 5432

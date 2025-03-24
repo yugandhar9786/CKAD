@@ -9,3 +9,14 @@ spec:
   containers:
     - name: worker-pod
       image: kodekloud/examplevotingapp_worker:v1
+      env:
+        - name: DATABASE_HOST
+          value: "myapp-postgres"
+        - name: DATABASE_PORT
+          value: "5432"
+        - name: DATABASE_USER
+          value: "postgres"
+        - name: DATABASE_PASSWORD
+          value: "postgres"
+        - name: DATABASE_NAME
+          value: "mydatabase"
